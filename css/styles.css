@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'avenir';
+  src: url(../font/AvenirNextLTPro-Regular.otf); }
+@font-face {
+  font-family: 'avenirCondensed';
+  src: url(../font/AvenirNextLTPro-BoldCn.otf); }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: avenir; }
+  body p,
+  html p {
+    padding: 20px 20px 20px 0px;
+    font-size: 2rem; }
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px; }
+  .wrapper h1 {
+    font-family: avenirCondensed;
+    padding: 40px 0px;
+    font-size: 3rem; }
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  color: white; }
+  .section .logo_content {
+    text-align: center;
+    margin: auto 0px;
+    width: 100%; }
+    .section .logo_content button {
+      background-color: #ff0266;
+      color: #fff;
+      padding: 15px 45px;
+      border: none;
+      border-radius: 5px; }
+      .section .logo_content button:hover {
+        background-color: #ca0150; }
+    .section .logo_content .links_download {
+      margin: 50px auto 0px auto;
+      padding: 0px;
+      display: flex;
+      position: relative;
+      width: fit-content; }
+      .section .logo_content .links_download li {
+        list-style: none;
+        margin: 0px 10px; }
+        .section .logo_content .links_download li a img {
+          border: solid 1px rgba(255, 255, 255, 0.7);
+          border-radius: 1px; }
+        .section .logo_content .links_download li a:hover {
+          opacity: 0.7; }
+  .section .info_content {
+    padding: 40px; }
+    .section .info_content p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1; }
+
+.static {
+  max-height: 90vh;
+  padding: 20px;
+  background: url("../img/xphone01.png") no-repeat left center #1a1a1a;
+  background-size: 100%; }
+  .static img {
+    width: 100%; }
+  .static ul {
+    padding: 0px;
+    list-style: none; }
+    .static ul li {
+      margin: 10px;
+      font-size: 1.5rem; }
+
+.bg1::after {
+  background: url("../img/back_pic2.jpg") no-repeat center center;
+  background-position-y: center;
+  -webkit-transform-origin: center center 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform-origin: center center 0;
+  transform: translateZ(-1.5px) scale(2);
+  filter: brightness(0.7);
+  background-size: cover; }
+
+.bg2::after {
+  background: url("../img/fooefect.png") no-repeat center center;
+  background-position-y: center;
+  -webkit-transform-origin: center center 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform-origin: center center 0;
+  transform: translateZ(-0.5px) scale(2);
+  filter: brightness(0.7);
+  background-size: cover; }
+
+footer {
+  width: 100%;
+  min-height: 45vh;
+  padding: 50px;
+  background-color: #1a1a1a;
+  margin-top: 87px;
+  color: #fff; }
+  footer .footer_content {
+    margin: auto;
+    max-width: 960px; }
+    footer .footer_content ul {
+      padding: 0px;
+      bottom: 0px;
+      float: right; }
+      footer .footer_content ul li {
+        list-style: none;
+        float: left;
+        margin: 0px 10px; }
+        footer .footer_content ul li a i {
+          font-size: 2.5rem;
+          color: #03a9f4;
+          padding: 5px; }
+          footer .footer_content ul li a i:hover {
+            color: #0056b3; }
+    footer .footer_content .form-group {
+      margin-top: 20px;
+      display: flex; }
+      footer .footer_content .form-group input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 325px; }
+      footer .footer_content .form-group .btn_submit {
+        padding: 10px 15px;
+        margin-left: 10px; }
+  footer .terms {
+    width: 100%;
+    text-align: end; }
+    footer .terms span {
+      margin: 0px 5px 0px 0px; }
+
+.mark {
+  line-height: 2;
+  padding: 8px;
+  background-color: rgba(25, 20, 17, 0.3);
+  color: #fff; }
+
+@media (max-width: 768px) {
+  .static {
+    padding: 30px;
+    background: url("../img/xphone01.png") no-repeat center bottom #1a1a1a;
+    background-size: 100%; } }
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; }
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333; }
+
+#button:active {
+  background-color: #555; }
+
+#button.show {
+  opacity: 1;
+  visibility: visible; }
+
+/* Styles for the content section */
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9; }
+
+@media (min-width: 500px) {
+  .content {
+    width: 43%; }
+
+  #button {
+    margin: 30px; } }
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5; }
+
+.content h3 {
+  font-style: italic;
+  color: #96a2a7; }
+
+/*# sourceMappingURL=styles.css.map */

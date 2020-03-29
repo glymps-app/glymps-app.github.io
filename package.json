@@ -1,0 +1,22 @@
+{
+  "name": "glymps",
+  "version": "1.0.0",
+  "description": "package",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Taylor214@bitbucket.org/Taylor214/glymps.git"
+  },
+  "author": "Alejo Francomano",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Taylor214/glymps#readme"
+}

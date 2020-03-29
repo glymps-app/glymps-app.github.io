@@ -1,122 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-	<title>Coming Soon 5</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Glymps</title>
 </head>
+
 <body>
-	
-	
-	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-b-30">
-		<div class="flex-w flex-c cd100 wsize1 bor1">
-			<div class="flex-col-c-m size2 bg0 bor2">
-				<span class="l1-txt3 p-b-7 days">35</span>
-				<span class="s1-txt1">Days</span>
-			</div>
+    <a id="button"></a>
+    <main class="wrapper">
+        <section class="section parallax bg1">
+            <div class="logo_content">
+                <img src="img/logo.png" alt="logo" width="250">
+                <p> No More Guessing, No More Waiting, No More Awkward Hellos</p>
+                <button class="scroll-down">Download Glymps</button>
+                <ul class="links_download">
+                    <li><a href="#"><img src="img/apple_download.png" alt="apple_btn" width="180"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section static">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <h1>WHAT WE DO?</h1>
+                        <ul>
+                            <li>See the girl across the bar....message her with Glymps.</li>
+                            <li>See the guy at the park....message him with Glymps.</li>
+                            <li>See anyone while you’re out….message them with Glymps.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section parallax bg2">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info_content">
+                        <h1>HOW WE DO IT?</h1>
+                        <p>The new dating app that allows you get a Glymps of who is in your
+                                immediate location, single, and interested in meeting…right away. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_content">
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1>ARE YOU IN?</h1>
+                        <h3>Text yourself the app now.</h3>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="" placeholder="Enter phone Number">
+                            <button type="button" class="btn btn-primary btn_submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 terms">
+                        <span><a href="#">Terms of Service</a></span>
+                        <span><a href="#">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </main>
+    <script src="js/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $('.scroll-down').click(function () {
+                console.log('entra')
+                $('.wrapper').animate({
+                    scrollTop: $('footer').offset().top
+                }, 'slow');
+                return false;
+            });
+        });
 
-			<div class="flex-col-c-m size2 bg0 bor2">
-				<span class="l1-txt3 p-b-7 hours">17</span>
-				<span class="s1-txt1">Hours</span>
-			</div>
+        let btn = $('#button');
 
-			<div class="flex-col-c-m size2 bg0 bor2">
-				<span class="l1-txt3 p-b-7 minutes">50</span>
-				<span class="s1-txt1">Minutes</span>
-			</div>
+        $('.wrapper').scroll(function () {
+            console.log('entra');
+            if ($('.wrapper').scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
 
-			<div class="flex-col-c-m size2 bg0">
-				<span class="l1-txt3 p-b-7 seconds">39</span>
-				<span class="s1-txt1">Seconds</span>
-			</div>
-		</div>
-
-
-		<div class="flex-col-c w-full p-t-50 p-b-80">
-			<h3 class="l1-txt1 txt-center p-b-10">
-				Glymps is Coming Soon
-			</h3>
-
-			<p class="txt-center l1-txt2 p-b-43 wsize2">
-				Our website is under construction, follow us for update now!
-			</p>
-
-			<form class="flex-w flex-c-m w-full contact100-form validate-form">
-				<div class="wrap-input100 validate-input where1" data-validate = "Name is required">
-					<input class="s1-txt3 placeholder0 input100" type="text" name="name" placeholder="Name">
-				</div>
-
-				<div class="wrap-input100 validate-input where1" data-validate = "Email is required: ex@abc.xyz">
-					<input class="s1-txt3 placeholder0 input100" type="text" name="email" placeholder="Email">
-				</div>
-
-				<button class="flex-c-m s1-txt4 size3 how-btn trans-04 where1">
-					Get Updates
-				</button>
-				
-			</form>			
-		</div>
-
-		<span class="s1-txt2 txt-center">
-			@ 2017 Coming Soon Template. Designed by Colorlib
-		</span>
-
-	</div>
-
-
-
-	
-
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			// Set Endtime here
-			// Endtime must be > current time
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York", can be empty
-			// go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('.wrapper').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
 </body>
+
 </html>
