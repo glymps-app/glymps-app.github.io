@@ -14,6 +14,24 @@ html {
     padding: 20px 20px 20px 0px;
     font-size: 2rem; }
 
+.container {
+  margin: 100px; }
+  .container h1 {
+    font-size: 2.5rem; }
+  .container h2 {
+    font-size: 2.1rem; }
+  .container h3 {
+    font-size: 1.5rem; }
+  .container h4 {
+    font-size: 1.3rem; }
+  .container p {
+    padding: 0px;
+    font-size: 1.2rem; }
+  .container ul {
+    font-size: 1.2rem; }
+  .container a {
+    font-size: 1.4rem; }
+
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
